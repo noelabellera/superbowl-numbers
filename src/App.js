@@ -3,7 +3,15 @@ import './App.css';
 import Button from './components/Button/Button';
 import Row from './components/Rows/Rows';
 
+
+
+
 class App extends Component {
+
+  randomizeNumbers = () => {
+    let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  }
+
   render() {
     return (
       <div>
