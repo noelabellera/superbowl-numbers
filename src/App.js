@@ -7,9 +7,19 @@ import Row from './components/Rows/Rows';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      arr: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }
+  }
+
 
   randomizeNumbers = () => {
     let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    console.log(arr)
+    arr.sort(() => Math.random() - 0.5);
+    console.log(arr);
   }
 
   render() {
@@ -18,7 +28,7 @@ class App extends Component {
         <h1>SuperBowl 53</h1>
         <h2>Rams</h2>
         <Row />
-        <Button />
+        <Button onClick={this.randomizeNumbers}/>
         <br />
         <h2>Patriots</h2>
         <Row />

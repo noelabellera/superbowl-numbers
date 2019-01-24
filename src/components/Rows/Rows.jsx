@@ -5,16 +5,16 @@ import './Rows.css';
 const Row = (props) => {
     return (
         <div id="Row">
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
-            <li class="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
+            <li className="box"></li>
         </div>
     )
 }
