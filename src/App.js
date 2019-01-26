@@ -16,10 +16,16 @@ class App extends Component {
 
 
   randomizeNumbers = () => {
-    let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    console.log(arr)
-    arr.sort(() => Math.random() - 0.5);
-    console.log(arr);
+    console.log(this.state.arr)
+    this.state.arr.sort(() => Math.random() - 0.5);
+    console.log(this.state.arr);
+    return this.state.arr;
+  }
+
+  updateState = () => {
+    this.setState({
+      arr: this.randomizeNumbers()
+    })
   }
 
   render() {
@@ -28,7 +34,7 @@ class App extends Component {
         <h1>SuperBowl 53</h1>
         <h2>Rams</h2>
         <Row />
-        <Button onClick={this.randomizeNumbers}/>
+        <Button updateState={this.updateState}/>
         <br />
         <h2>Patriots</h2>
         <Row />
