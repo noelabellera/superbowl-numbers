@@ -5,7 +5,7 @@ import React from 'react';
 const Button = (props) => {
     return (
         <div>
-            <button onClick={props.updateState}>Randomize Numbers</button>
+            <button onClick={props.update}>Randomize Numbers</button>
         </div>
     )
 }
