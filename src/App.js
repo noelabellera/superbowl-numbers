@@ -36,9 +36,13 @@ class App extends Component {
       <div>
         <h1>SuperBowl 53</h1>
         <h2>Rams</h2>
+        <img src="https://i.imgur.com/jNepqMZ.png" alt="" height="80" width="120"/>
+
+        
         <Row />
-        <br />
+        <hr />
         <h2>Patriots</h2>
+        <img src="https://i.imgur.com/6TXXdZB.png" alt="" height="60" width="120"/>
         <Row />
         <br/>
         <h2>{this.state.msg}</h2>
