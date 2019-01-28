@@ -34,7 +34,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>SuperBowl 53</h1>
+        <h1>SuperBowl 53 Random Number Generator</h1>
+        <img src="https://i.imgur.com/fMiLUfM.png" alt="" />
         <h2>Rams</h2>
         <img src="https://i.imgur.com/jNepqMZ.png" alt="" height="80" width="120"/>
 
