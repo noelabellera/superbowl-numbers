@@ -6,47 +6,26 @@ import Row from './components/Rows/Rows';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      msg: "Hello"
-    }
-  }
 
 
-  // randomizeNumbers = () => {
-  //   // console.log(this.state.arr)
-  //   this.state.arr.sort(() => Math.random() - 0.5);
-  //   console.log(this.state.arr);
-  //   return this.state.arr;
-  // }
-
-  updateState = () => {
-    this.setState({
-      msg: "Hello World"
-    }, () => {
-      console.log(this.state.msg);
-    })
-
-  }
 
   
   render() {
     return (
       <div>
         <h1>SuperBowl 53 Random Number Generator</h1>
-        <img src="https://i.imgur.com/fMiLUfM.png" alt="" />
-        <h2>Rams</h2>
+        <img src="https://i.imgur.com/fMiLUfM.png" alt="" /><br/>
+        <img className="rams" src="https://i.imgur.com/IJg8m1V.png" alt="" height="90" width="100"/> 
+
         <img src="https://i.imgur.com/jNepqMZ.png" alt="" height="80" width="120"/>
 
         
         <Row />
         <hr />
-        <h2>Patriots</h2>
+        <img className="patriots" src="https://i.imgur.com/6X3Eloe.png" alt="" height="90" width="100"/> 
         <img src="https://i.imgur.com/6TXXdZB.png" alt="" height="60" width="120"/>
         <Row />
         <br/>
-        <h2>{this.state.msg}</h2>
       </div>
     );
   }
