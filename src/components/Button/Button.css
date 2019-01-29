@@ -1,0 +1,13 @@
+.btn {
+    height: 40px;
+    width: 180px;
+    font-size: 15px;
+    margin: 15px 0px;
+
+}
+
+.btn:hover {
+    background: tomato;
+    transition: .45s;
+    cursor: pointer;
+}
